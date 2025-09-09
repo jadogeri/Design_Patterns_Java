@@ -5,7 +5,12 @@ src/main/java
 └── com/example/designpatterns
     ├── creational
     │   ├── singleton
-    │   │   ├── Singleton.java
+    │   │   ├── Connection.java
+    │   │   ├── DatabaseClient.java
+    │   │   ├── MySql.java
+    │   │   ├── Oracle.java
+    │   │   ├── MongoDB.java
+    │   │   ├── PostgreSql.java
     │   │   └── SingletonDemo.java
     │   ├── factory
     │   │   ├── Product.java
