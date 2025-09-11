@@ -1,8 +1,9 @@
 package creational.singleton;
 
-public class SingletonDemo {
+public class SingletonRunner {
 
     public static void main(String[] args) {
+        
 
         DatabaseClient mysql = new MySql();
         DatabaseClient oracle = new Oracle();
