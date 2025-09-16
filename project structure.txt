@@ -13,11 +13,15 @@ src/main/java
     │   │   ├── PostgreSql.java
     │   │   └── SingletonDemo.java
     │   ├── factory
-    │   │   ├── Product.java
-    │   │   ├── ConcreteProductA.java
-    │   │   ├── ConcreteProductB.java
-    │   │   ├── ProductFactory.java
-    │   │   └── FactoryDemo.java
+    │   │   ├── Game.java
+    │   │   ├── GameFactory.java
+    │   │   ├── PlayStation.java
+    │   │   ├── Nintendo.java
+    │   │   ├── Xbox.java
+    │   │   ├── PlayStationFactory.java
+    │   │   ├── NintendoFactory.java
+    │   │   ├── XboxFactory.java
+    │   │   └── FactoryRunner.java
     │   └── builder
     │       ├── ProductBuilder.java
     │       ├── Product.java
