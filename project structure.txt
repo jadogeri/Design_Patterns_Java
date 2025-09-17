@@ -23,9 +23,9 @@ src/main/java
     │   │   ├── XboxFactory.java
     │   │   └── FactoryRunner.java
     │   └── builder
-    │       ├── ProductBuilder.java
+    │       ├── Pizza.java
     │       ├── Product.java
-    │       └── BuilderDemo.java
+    │       └── BuilderRunner.java
     ├── structural
     │   ├── adapter
     │   │   ├── OldSystem.java
@@ -90,8 +90,10 @@ src/main/java
 │   │   ├── ConcreteProductB.java
 │   │   └── ProductFactory.java
 │   └── builder
-│       └── User.java
-│       └── UserBuilder.java
+│       ├── Pizza.java
+│       ├── ConcreteProductA.java
+│       ├── ConcreteProductB.java
+│       └── BuilderRunner.java
 ├── structural
 │   ├── adapter
 │   │   ├── OldSystem.java
