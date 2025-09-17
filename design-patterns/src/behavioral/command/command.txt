@@ -1,0 +1,87 @@
+The Command design pattern in Java encapsulates a request as an object, thereby allowing for parameterization of clients with different requests, queuing of requests, and logging of requests. It also supports undoable operations. 
+Here is a simplified example demonstrating the Command pattern with a remote control for a light: 
+1. Command Interface: 
+This interface declares the execute() method, which all concrete commands will implement. 
+interface Command {
+    void execute();
+}
+
+2. Receiver Class: 
+The Light class is the receiver, which performs the actual actions when commanded. 
+class Light {
+    public void turnOn() {
+        System.out.println("Light is ON");
+    }
+
+    public void turnOff() {
+        System.out.println("Light is OFF");
+    }
+}
+
+3. Concrete Command Classes: 
+These classes implement the Command interface and encapsulate specific actions on the Light receiver. 
+class LightOnCommand implements Command {
+    private Light light;
+
+    public LightOnCommand(Light light) {
+        this.light = light;
+    }
+
+    @Override
+    public void execute() {
+        light.turnOn();
+    }
+}
+
+class LightOffCommand implements Command {
+    private Light light;
+
+    public LightOffCommand(Light light) {
+        this.light = light;
+    }
+
+    @Override
+    public void execute() {
+        light.turnOff();
+    }
+}
+
+4. Invoker Class: 
+The RemoteControl acts as the invoker, which holds a command and triggers its execution. It doesn't know the specifics of the command or the receiver. 
+class RemoteControl {
+    private Command command;
+
+    public void setCommand(Command command) {
+        this.command = command;
+    }
+
+    public void pressButton() {
+        command.execute();
+    }
+}
+
+5. Client (Main Class): 
+The client creates the receiver, concrete commands, and the invoker, then sets the commands on the invoker. 
+public class CommandPatternExample {
+    public static void main(String[] args) {
+        // Create the receiver
+        Light livingRoomLight = new Light();
+
+        // Create concrete commands
+        Command lightOn = new LightOnCommand(livingRoomLight);
+        Command lightOff = new LightOffCommand(livingRoomLight);
+
+        // Create the invoker
+        RemoteControl remote = new RemoteControl();
+
+        // Set and execute commands
+        remote.setCommand(lightOn);
+        remote.pressButton(); // Output: Light is ON
+
+        remote.setCommand(lightOff);
+        remote.pressButton(); // Output: Light is OFF
+    }
+}
+
+AI responses may include mistakes.
+
