@@ -1,0 +1,97 @@
+Here is an example of the Factory Method design pattern in Java, adhering to SOLID principles:
+1. Product Interface (Single Responsibility Principle, Liskov Substitution Principle):
+// Product interface
+public interface Notification {
+    void send();
+}
+
+2. Concrete Products (Single Responsibility Principle, Liskov Substitution Principle):
+// Concrete Product 1
+public class EmailNotification implements Notification {
+    @Override
+    public void send() {
+        System.out.println("Sending an email notification.");
+    }
+}
+
+// Concrete Product 2
+public class SMSNotification implements Notification {
+    @Override
+    public void send() {
+        System.out.println("Sending an SMS notification.");
+    }
+}
+
+// Concrete Product 3
+public class PushNotification implements Notification {
+    @Override
+    public void send() {
+        System.out.println("Sending a push notification.");
+    }
+}
+
+3. Abstract Factory (Single Responsibility Principle, Open/Closed Principle, Dependency Inversion Principle):
+// Abstract Factory
+public abstract class NotificationFactory {
+    public abstract Notification createNotification();
+}
+
+4. Concrete Factories (Single Responsibility Principle, Open/Closed Principle, Dependency Inversion Principle):
+// Concrete Factory for Email
+public class EmailNotificationFactory extends NotificationFactory {
+    @Override
+    public Notification createNotification() {
+        return new EmailNotification();
+    }
+}
+
+// Concrete Factory for SMS
+public class SMSNotificationFactory extends NotificationFactory {
+    @Override
+    public Notification createNotification() {
+        return new SMSNotification();
+    }
+}
+
+// Concrete Factory for Push
+public class PushNotificationFactory extends NotificationFactory {
+    @Override
+    public Notification createNotification() {
+        return new PushNotification();
+    }
+}
+
+5. Client Code (Dependency Inversion Principle):
+public class NotificationClient {
+    public static void main(String[] args) {
+        // Create an Email notification using its factory
+        NotificationFactory emailFactory = new EmailNotificationFactory();
+        Notification emailNotification = emailFactory.createNotification();
+        emailNotification.send();
+
+        // Create an SMS notification using its factory
+        NotificationFactory smsFactory = new SMSNotificationFactory();
+        Notification smsNotification = smsFactory.createNotification();
+        smsNotification.send();
+
+        // Create a Push notification using its factory
+        NotificationFactory pushFactory = new PushNotificationFactory();
+        Notification pushNotification = pushFactory.createNotification();
+        pushNotification.send();
+    }
+}
+
+SOLID Principles Adherence:
+
+• Single Responsibility Principle (SRP): Each class has a single, well-defined responsibility (e.g., EmailNotification handles email sending, EmailNotificationFactory handles email notification creation).
+• Open/Closed Principle (OCP): The system is open for extension but closed for modification. Adding a new notification type (e.g., WhatsAppNotification) only requires creating a new concrete Notification and a new concrete NotificationFactory without modifying existing code.
+• Liskov Substitution Principle (LSP): Subtypes (concrete notifications) can be substituted for their base type (Notification) without altering the correctness of the program.
+• Dependency Inversion Principle (DIP): High-level modules (the client) do not depend on low-level modules (concrete notification types). Both depend on abstractions (the Notification interface and NotificationFactory abstract class). The client interacts with the NotificationFactory interface, not specific concrete factories.
+• Interface Segregation Principle (ISP): While not explicitly demonstrated with multiple interfaces in this simple example, the Notification interface is focused on a single responsibility, avoiding bloated interfaces.
+
+AI responses may include mistakes.
+
+
+
+
+https://medium.com/@thecodebean/factory-design-pattern-implementation-in-java-bd16ebb012e2
