@@ -24,8 +24,6 @@ public class CommandRunner {
         // Set and execute commands
         remote.setCommand(turnOnTvCommand);
         remote.pressButton();  // Outputs: TV is now on
-        remote.setCommand(adjustVolumeRadioCommand);
-        remote.pressButton();  // Outputs: Volume adjusted
 
         remote.setCommand(changeChannelTvCommand);
         remote.pressButton();  // Outputs: Channel changed
@@ -33,5 +31,19 @@ public class CommandRunner {
         remote.setCommand(turnOffTvCommand);
         remote.pressButton();  // Outputs: TV is now off
 
+        remote.setCommand(turnOnRadioCommand);
+        remote.pressButton();  // Outputs: Turns on Radio
+
+        remote.setCommand(turnOffRadioCommand);
+        remote.pressButton();
+
+        remote.setCommand(turnOnLightCommand);
+        remote.pressButton();
+
+        remote.setCommand(adjustVolumeRadioCommand);
+        remote.pressButton();  // Outputs: Volume adjusted
+
+        remote.setCommand(turnOffLightCommand);
+        remote.pressButton();
     }
 }
