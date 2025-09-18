@@ -1,6 +1,6 @@
 package behavioral.command;
 
-public class Speaker implements Device {
+public class Radio implements Device {
 
     @Override
     public void turnOn() {
@@ -12,5 +12,9 @@ public class Speaker implements Device {
     public void turnOff() {
 
         System.out.println("TV turned off");
+    }
+
+    public void adjustVolume() {
+        System.out.println("Adjusting radio volume");
     }
 }

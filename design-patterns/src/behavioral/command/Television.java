@@ -11,4 +11,8 @@ public class Television implements Device {
     public void turnOff() {
         System.out.println("TV turned off");
     }
+
+    public void changeChannel() {
+        System.out.println("Changing channel");
+    }
 }
