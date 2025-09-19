@@ -10,8 +10,8 @@ src/main/java
     │   │   ├── MySql.java
     │   │   ├── Oracle.java
     │   │   ├── MongoDB.java
-    │   │   ├── PostgreSql.java
-    │   │   └── SingletonDemo.java
+    │   │   ├── PostgresSql.java
+    │   │   └── SingletonRunner.java
     │   ├── factory
     │   │   ├── Game.java
     │   │   ├── GameFactory.java
@@ -28,10 +28,11 @@ src/main/java
     │       └── BuilderRunner.java
     ├── structural
     │   ├── adapter
-    │   │   ├── OldSystem.java
-    │   │   ├── NewSystemInterface.java
-    │   │   ├── Adapter.java
-    │   │   └── AdapterDemo.java
+    │   │   ├── LegacyPrintable.java
+    │   │   ├── ModernPrintable.java
+    │   │   ├── LegacyPrinter.java
+    │   │   ├── PrinterAdapter.java
+    │   │   └── AdapterRunner.java
     │   ├── factory
     │   │   ├── Product.java
     │   │   ├── NewSystemInterface.java
