@@ -33,31 +33,56 @@ src/main/java
     │   │   ├── LegacyPrinter.java
     │   │   ├── PrinterAdapter.java
     │   │   └── AdapterRunner.java
-    │   ├── factory
-    │   │   ├── Product.java
-    │   │   ├── NewSystemInterface.java
-    │   │   ├── Adapter.java
-    │   │   └── AdapterDemo.java
+    │   ├── decorator
+    │   │   ├── Burger.java
+    │   │   ├── RegularBurger.java
+    │   │   ├── BurgerDecorator.java
+    │   │   ├── MayoDecorator.java
+    │   │   ├── OnionDecorator.java
+    │   │   ├── PickleDecorator.java
+    │   │   ├── CheeseDecorator.java
+    │   │   └── DecoratorRunner.java
     │   └── facade
-    │       ├── Coffee.java
-    │       ├── SimpleCoffee.java
-    │       ├── MilkDecorator.java
-    │       ├── SugarDecorator.java
-    │       └── DecoratorDemo.java
+    │       ├── ApplePay.java
+    │       ├── VisaCard.java
+    │       ├── DHL.java
+    │       ├── MonarchInventoryService.java
+    │       ├── PaymentService.java
+    │       ├── InventoryService.java
+    │       ├── ShippingService.java
+    │       ├── USPS.java
+    │       ├── OrderFacade.java
+    │       └── FacadeRunner.java
     └── behavioral
         ├── strategy
+        │   ├── Card.java
+        │   ├── CreditCardStrategy.java
+        │   ├── DebitCardStrategy.java
+        │   ├── PaypalStrategy.java
         │   ├── PaymentStrategy.java
-        │   ├── CreditCardPayment.java
-        │   ├── PayPalPayment.java
-        │   └── StrategyDemo.java
-        └── observer
-            ├── Subject.java
-            ├── Observer.java
-            ├── ConcreteSubject.java
-            ├── ConcreteObserverA.java
-            ├── ConcreteObserverB.java
-            └── ObserverDemo.java
-
+        │   ├── InsufficientFundsException.java
+        │   ├── ShoppingCart.java
+        │   └── StrategyRunner.java
+        ├── observer
+        │   ├── Subject.java
+        │   ├── Observer.java
+        │   ├── ChatRoom.java
+        │   ├── Message.java
+        │   ├── User.java
+        │   └── ObserverRunner.java
+        └── command
+            ├── Command.java
+            ├── Device.java
+            ├── Radio.java
+            ├── Light.java
+            ├── Television.java
+            ├── Light.java
+            ├── TurnOnCommand.java
+            ├── TurnOffCommand.java
+            ├── AdjustvolumeCommand.java
+            ├── ChangeChannelCommand.java
+            ├── RemoteControl.java
+            └── CommandRunner.java
 Implementation Details: 
 
 • Creational Patterns: 
