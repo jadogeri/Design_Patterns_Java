@@ -1,7 +1,5 @@
 package creational.builder;
 
-import creational.builder.*;
-
 public class BuilderRunner
 {
     public static void main(String[] args)

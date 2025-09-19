@@ -5,9 +5,9 @@ public class StrategyRunner {
 
         ShoppingCart cart = new ShoppingCart();
 
-        double funds1 = 20000.0;
-        double fund2 = 3000.0;
-        double funds3 = 1500.0;
+        double funds1 = 20.0;
+        double fund2 = 300.0;
+        double funds3 = 150.0;
 
         CreditCardStrategy creditCardStrategy = new CreditCardStrategy("John Doe","1234567890","123", "10-aug-2027", 5000.0);
         DebitCardStrategy debitCardStrategy = new DebitCardStrategy("Jane Doe","4444567899","425", "10-feb-2026", 5000.0);
@@ -27,20 +27,17 @@ public class StrategyRunner {
             System.out.println(debitCardStrategy.getAmount());
             cart.increaseFunds(funds1);
             System.out.println(debitCardStrategy.getAmount());
+            cart.setPaymentStrategy(paypalStrategy);
+            cart.checkout(funds3);
+            System.out.println(paypalStrategy.getAmount());
         }catch(InsufficientFundsException e){
             System.out.println("Insufficient Funds" + e.getMessage());
             System.out.println("Insufficient Funds");
 
         }catch (Exception e){
-            System.out.println("exception: " +e.getMessage());
+            System.out.println("exception: " + e.getMessage());
 
         }
-
-
-
-        // Pay by Credit Card
-//        cart.setPaymentStrategy(new CreditCardStrategy("John Doe", "1234567890123456", "123", "12/25"));
-//        cart.checkout(totalAmount);
 
     }
 }
