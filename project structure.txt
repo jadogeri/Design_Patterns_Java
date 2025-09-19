@@ -107,50 +107,12 @@ A Java project can be created to demonstrate the implementation of various desig
 Project Structure: 
 The project can be structured with clear packages for each design pattern category: 
 src/main/java
-├── creational
-│   ├── singleton
-│   │   └── SingletonLogger.java
-│   ├── factory
-│   │   ├── Product.java
-│   │   ├── ConcreteProductA.java
-│   │   ├── ConcreteProductB.java
-│   │   └── ProductFactory.java
-│   └── builder
-│       ├── Pizza.java
-│       ├── ConcreteProductA.java
-│       ├── ConcreteProductB.java
-│       └── BuilderRunner.java
-├── structural
-│   ├── adapter
-│   │   ├── OldSystem.java
-│   │   ├── NewSystemInterface.java
-│   │   └── Adapter.java
-│   ├── decorator
-│   │   ├── Coffee.java
-│   │   ├── SimpleCoffee.java
-│   │   ├── MilkDecorator.java
-│   │   └── SugarDecorator.java
-│   └── facade
-│       ├── SubsystemA.java
-│       ├── SubsystemB.java
-│       └── Facade.java
-├── behavioral
-│   ├── observer
-│   │   ├── Subject.java
-│   │   ├── Observer.java
-│   │   ├── ConcreteSubject.java
-│   │   └── ConcreteObserver.java
-│   ├── strategy
-│   │   ├── PaymentStrategy.java
-│   │   ├── CreditCardPayment.java
-│   │   └── PayPalPayment.java
-│   │   └── ShoppingCart.java
-│   └── command
-│       ├── Command.java
-│       ├── Light.java
-│       ├── TurnOnLightCommand.java
-│       └── RemoteControl.java
-└── Main.java
+
+
+
+
+
+
 
 Implementation Details: 
 
