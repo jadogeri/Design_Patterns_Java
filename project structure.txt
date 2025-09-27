@@ -97,42 +97,5 @@ Implementation Details:
 • Behavioral Patterns: 
 	• Strategy: Define an interface for a family of algorithms, encapsulate each algorithm in a separate class, and allow clients to choose the desired algorithm at runtime. 
 	• Observer: Implement a subject (publisher) and observer (subscriber) interface. The subject maintains a list of observers and notifies them of state changes. 
-
-Each pattern's implementation should include a demonstration class (e.g., SingletonDemo.java) that showcases how the pattern is used and its benefits. This project structure provides a clear and organized way to explore and understand various design pattern implementations in Java. 
-
-AI responses may include mistakes.
-
-/** */
-A Java project can be created to demonstrate the implementation of various design patterns. This project can serve as a practical learning tool and a reference for common design pattern usages. 
-Project Structure: 
-The project can be structured with clear packages for each design pattern category: 
-src/main/java
-
-
-
-
-
-
-
-Implementation Details: 
-
-• Creational Patterns: 
-	• Singleton: Implement a SingletonLogger class to demonstrate a single instance for logging. 
-	• Factory Method: Create a ProductFactory to produce different Product types (e.g., ConcreteProductA, ConcreteProductB). 
-	• Builder: Design a User class with a UserBuilder for step-by-step object construction. 
-
-• Structural Patterns: 
-	• Adapter: Create an Adapter to bridge an OldSystem with a NewSystemInterface. 
-	• Decorator: Implement a Coffee interface with SimpleCoffee and decorators like MilkDecorator and SugarDecorator to add functionalities. 
-	• Facade: Create a Facade to simplify interactions with complex SubsystemA and SubsystemB. 
-
-• Behavioral Patterns: 
-	• Observer: Implement Subject and Observer interfaces to demonstrate a one-to-many dependency, with ConcreteSubject notifying ConcreteObservers. 
-	• Strategy: Define a PaymentStrategy interface with concrete implementations (e.g., CreditCardPayment, PayPalPayment) used by a ShoppingCart. 
-	• Command: Create Command objects (e.g., TurnOnLightCommand) to encapsulate requests, executed by a RemoteControl. 
-
-Main Class: 
-The Main.java class can contain examples demonstrating the usage of each implemented design pattern, showcasing their benefits and how they address specific design problems. 
-
-AI responses may include mistakes.
+	• Command: Create Command objects (e.g., TurnOnLightCommand) to encapsulate requests, executed by a RemoteControl.
 
