@@ -40,10 +40,7 @@ This repository is for learning and implementing software design patterns concep
       </li>
     </ul>
     <ul>
-      <li><a href="#3-data-design">3. Project Structure</a>
-        <ul>
-          <li><a href="#31-data-entities-and-relationships">3.1 Entities and Relationships</a> </li>
-        </ul>
+      <li><a href="#3-project-structure">3. Project Structure</a>
       </li>
     </ul> 
     <ul>
@@ -58,11 +55,11 @@ This repository is for learning and implementing software design patterns concep
         </li>
     </ul> 
     <ul>  
-        <li><a href="#8-license">8. License</a>
+        <li><a href="#6-license">6. License</a>
         </li>
     </ul> 
     <ul> 
-        <li><a href="#9-references">9. References</a>
+        <li><a href="#7-references">7. References</a>
         </li>
     <ul>
 
@@ -77,7 +74,7 @@ The purpose of this project is to learn and apply software design patterns princ
 This project will allow users to :
 
 - Utilize code snippet in larger project.
-- Implement SOLID principles while writing code.
+- Implement SOLID principles to promote clean code.
 
 ### **1.3 Intended Audience**
 
@@ -90,7 +87,7 @@ This project will allow users to :
 
 - **Programming Languages**: Java
 - **IDE**: IntelliJ and Visual Studio Code (VSCode)
-- **Plugins**: Early AI
+- **Plugins**: Early AI, Google AI
 - **Version Control**: Git and GitHub
 - **Code Analsis**: SonarQube
 - **Build**: Maven
@@ -189,19 +186,46 @@ design-patterns
 ```
 Implementation Details: 
 
-• Creational Patterns: 
-	• Singleton: Implement a class with a private constructor, a static instance, and a static getInstance() method to ensure only one instance exists. 
-	• Factory Method: Define an interface or abstract class for products and concrete product implementations. Create a factory interface/abstract class and concrete factories to create product objects. 
-	• Builder: Create a separate builder class to construct complex objects step-by-step, allowing for flexible object creation. 
+<ol>
+Creational Patterns: 
+  <li>
+	Singleton: Implement a class with a private constructor, a static instance, and a static getInstance() method to ensure only one instance exists. 
+  </li>
+  <li>
+	Factory Method: Define an interface or abstract class for products and concrete product implementations. Create a factory interface/abstract class and concrete factories to create product objects. 
+  </li>
+  <li>
+	Builder: Create a separate builder class to construct complex objects step-by-step, allowing for flexible object creation.    
+  </li>
 
-• Structural Patterns: 
-	• Adapter: Create an adapter class that allows incompatible interfaces to work together by converting the interface of one class into another. 
-	• Decorator: Use concrete decorator classes to add new responsibilities to objects dynamically without modifying their core structure. 
+</ol>
 
-• Behavioral Patterns: 
-	• Strategy: Define an interface for a family of algorithms, encapsulate each algorithm in a separate class, and allow clients to choose the desired algorithm at runtime. 
-	• Observer: Implement a subject (publisher) and observer (subscriber) interface. The subject maintains a list of observers and notifies them of state changes. 
-	• Command: Create Command objects (e.g., TurnOnLightCommand) to encapsulate requests, executed by a RemoteControl.
+<ol>
+ Structural Patterns: 
+  <li>
+	Adapter: Create an adapter class that allows incompatible interfaces to work together by converting the interface of one class into another. 
+  </li>
+  <li>
+	Decorator: Use concrete decorator classes to add new responsibilities to objects dynamically without modifying their core structure. 
+  </li>
+  <li>
+  Facade: The primary class, subsystems the facade interacts with and a client component or application that uses the facade to access the subsystem's. 
+  </li>
+  </ol>
+
+
+<ol>
+Behavioral Patterns: 
+  <li>
+	Strategy: Define an interface for a family of algorithms, encapsulate each algorithm in a separate class, and allow clients to choose the desired algorithm at runtime. 
+  </li>
+  <li>
+	Observer: Implement a subject (publisher) and observer (subscriber) interface. The subject maintains a list of observers and notifies them of state changes. 
+  </li>
+  <li>
+   Command: Create Command objects (e.g., TurnOnLightCommand) to encapsulate requests, executed by a RemoteControl.
+  </li>
+</ol>
 
 
 
@@ -225,45 +249,35 @@ Implementation Details:
 
 1 Select option `CLONE REPOSITORY` .
 
-2 Copy and paste url `https://github.com/jadogeri/Spring-Boot-Demo-Factory-API.git` and choose location to save project then press clone.
+2 Copy and paste url `https://github.com/jadogeri/Design_Patterns_Java.git` and choose location to save project then press clone.
 
- (Note!! choose empty folder : I created folder factoryAPI)
+ (Note!! choose empty folder : I created folder repo)
 
-![start application](assets/images/cloneProject.png)
+![clone project](assets/images/cloneProject.png)
 
 
 3 Change view to Project.
 
-4 Navigate to factory --> `src` --> `main` -- `java`.
+4 Navigate to design_patterns --> `src` --> `main` -- `java`.
 
-5 Inspect file `FactoryApplication.java`.
+5 To run any of the design patterns (using command pattern for illustration)
+  Navigate to `behavioural` --> `command` --> `CommandRunner` .
+
+  Note!! each pattern has a file ending in *.Runner.java to start application.
 
 6 Press play button to start application.
 
 ![start application](assets/images/runApp.png)
 
-
-## **6. API Testing**
-
-**Prerequisites** : Ensure container or local application is running.
-
-**Note** : Use [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) docs for testing endpoints.
-
-![API Documentation](assets/images/swagger.png)
-
-
 ---
 
+## **6. License**
 
 [LICENSE](/LICENSE)
 
 ---
 
-## **9. References**
+## **7. References**
 
-* JUnit5 : [JUnit 5 User Guide](https://docs.junit.org/current/user-guide/).
-* Symflower : [Symflower feature overview](https://www.youtube.com/watch?v=17KKqlLNcTc).
-* TestContainers : [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
-* Swagger :  [Swagger API Documentation for Spring Boot 3](https://www.baeldung.com/spring-rest-openapi-documentation)
-* Medium : [Handling exceptions and error responses ](https://leejjon.medium.com/handling-exceptions-and-error-responses-in-java-rest-services-afda273c9d2f)
-* TutorialsPoint : [JUnit unit testing tool](https://www.tutorialspoint.com/junit/junit_basic_usage.htm)
+* Tutorialspoint : [Design Patterns in Java](https://www.tutorialspoint.com/design_pattern/index.htm).
+* ForrestKnight : [7 Design Patterns EVERY Developer Should Know](https://www.youtube.com/watch?v=BJatgOiiht4&t=871s).
