@@ -24,9 +24,9 @@ public class ChatRoom implements Subject {
 
     @Override
     public void removeObserver(Observer o) {
-        observers.remove(o);
         String message = String.valueOf(Message.LOGGED_OUT);
         sendMessage(o, message);
+        observers.remove(o);
 
     }
 
