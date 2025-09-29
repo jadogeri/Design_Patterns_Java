@@ -281,3 +281,8 @@ Behavioral Patterns:
 
 * Tutorialspoint : [Design Patterns in Java](https://www.tutorialspoint.com/design_pattern/index.htm).
 * ForrestKnight : [7 Design Patterns EVERY Developer Should Know](https://www.youtube.com/watch?v=BJatgOiiht4&t=871s).
+* CodingShuttle : [10 Essential Java Design Patterns Every Developer Should Master (With Code Examples)](https://www.codingshuttle.com/blogs/top-8-design-patterns-in-java/).
+* Tpointtech : [Design Patterns in Software Engineering)](https://www.tpointtech.com/design-patterns-in-software-engineering).
+
+
+
