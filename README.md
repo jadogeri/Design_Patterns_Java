@@ -67,7 +67,7 @@ This repository is for learning and implementing software design patterns concep
 
 ### **1.1 Purpose**
 
-The purpose of this project is to learn and apply software design patterns principles in a small scale.
+The purpose of this project is to learn and apply software design patterns principles in java applications.
 
 ### **1.2 Scope**
 
@@ -79,7 +79,7 @@ This project will allow users to :
 ### **1.3 Intended Audience**
 
 - Junior or Senior backend developers.
-- beginners learning Spring Boot (Java).
+- Beginners learning (Java) and design patterns in software engineering.
 
 ---
 
@@ -90,8 +90,6 @@ This project will allow users to :
 - **Plugins**: Early AI, Google AI
 - **Version Control**: Git and GitHub
 - **Code Analsis**: SonarQube
-- **Build**: Maven
-
 
 ## **3. Project Structure**
 
@@ -235,13 +233,12 @@ Behavioral Patterns:
 
 * [Download and install IntelliJ Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 * [Download and install Java](https://www.oracle.com/java/technologies/downloads/)
-* [Download and install Maven](https://maven.apache.org/download.cgi)
 
 ---
 
 ## **5. Usage**
 
-**Prerequisites** :installation of IntelliJ IDE, Docker and Maven.
+**Prerequisites** :installation of IntelliJ IDE and Java.
 
 ### **5.1 Run Application**
 
@@ -258,12 +255,12 @@ Behavioral Patterns:
 
 3 Change view to Project.
 
-4 Navigate to design_patterns --> `src` --> `main` -- `java`.
+4 Navigate to `design_patterns` --> `src` --> `main` -- `java`.
 
 5 To run any of the design patterns (using command pattern for illustration)
-  Navigate to `behavioural` --> `command` --> `CommandRunner` .
+  Navigate to `behavioral` --> `command` --> `CommandRunner` .
 
-  Note!! each pattern has a file ending in *.Runner.java to start application.
+  Note!! each pattern has a file ending in *.Runner.java to run the app.
 
 6 Press play button to start application.
 
